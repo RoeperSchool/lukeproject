@@ -27,21 +27,5 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-.idea
-engine/
-node_modules/
-platforms/
-platforms_backup/
-plugins/
-bower_components/
-*.keystore
-release.sh
-about.md
-iOS
-cordova.plugin.backup
-before_build.md
-/config.xml
-
-# v1 compatibility
-/config.scss
-/config.json
+# Platforms
+platforms
