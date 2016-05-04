@@ -2,9 +2,9 @@
 
 set -e
 
-ANDROID_ZIPALIGN="/path/to/Android/sdk/build-tools/21.1.2/zipalign"
-ANDROID_KEY_PATH="/path/to/keystore/my-release-key.keystore"
-ANDROID_KEY_ALIAS="alias_name"
+ANDROID_ZIPALIGN="/usr/bin/zipalign"
+ANDROID_KEY_PATH="/home/nicholas/.android/main.keystore"
+ANDROID_KEY_ALIAS="main"
 
 read -p "Release major, minor or patch? " version
 version=${version:-""}
