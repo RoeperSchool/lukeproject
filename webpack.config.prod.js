@@ -26,7 +26,7 @@ module.exports = extend(webpackConfig, {
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin({compress: false})
+        new webpack.optimize.UglifyJsPlugin()
     ]
 });
 

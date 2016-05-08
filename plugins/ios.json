@@ -66,9 +66,6 @@
         },
         "cordova-plugin-spinner-dialog": {
             "PACKAGE_NAME": "com.YourDomain.YourAppName"
-        },
-        "cordova-plugin-hockeyapp": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
         }
     },
     "dependent_plugins": {}

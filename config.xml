@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="org.roeper.roeperrecord" version="5.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Roeper Record</name>
@@ -9,6 +10,16 @@
     </author>
   <author email="luke.steiger@roeper.org" href="">
         Luke Steiger
+=======
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.YourDomain.YourAppName" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>YourAppName</name>
+    <description>
+        Your description.
+    </description>
+    <author email="youEmail@" href="yourUrl">
+        YourName
+>>>>>>> parent of 9b57686... Add HockeyApp, and edit the configuration
     </author>
   <content src="index.html"/>
   <access origin="*"/>
