@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.YourDomain.YourAppName" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>YourAppName</name>
+<widget id="org.roeper.roeperrecord" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Roeper Record</name>
   <description>
-        Your description.
-    </description>
-  <author email="youEmail@" href="yourUrl">
-        YourName
-    </author>
+    The Roeper Record application, with everything you could imagine, and everything you couldn't imagine.
+  </description>
+  <author email="nicholas.hubbard@roeper.org" href="https://github.com/nhubbard">
+    Nicholas Hubbard
+  </author>
+  <author email="luke.steiger@roeper.org" href="https://github.com/Kabootles">
+  	Luke Steiger
+  </author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://example.com/*"/>
