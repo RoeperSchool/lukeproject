@@ -79,10 +79,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "org.pushandplay.cordova.apprate": {
+    "cordova-plugin-apprate": {
         "source": {
             "type": "registry",
-            "id": "org.pushandplay.cordova.apprate@1.1.7"
+            "id": "cordova-plugin-apprate@1.1.12"
         },
         "is_top_level": true,
         "variables": {}
@@ -95,34 +95,18 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-x-toast": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-x-toast"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "nl.x-services.plugins.socialsharing": {
-        "source": {
-            "type": "registry",
-            "id": "nl.x-services.plugins.socialsharing@4.3.19"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-x-socialsharing": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-x-socialsharing"
+            "id": "cordova-plugin-x-socialsharing@5.0.12"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "com.ionic.keyboard": {
+    "ionic-plugin-keyboard": {
         "source": {
             "type": "registry",
-            "id": "com.ionic.keyboard@1.0.4"
+            "id": "ionic-plugin-keyboard@2.0.1"
         },
         "is_top_level": true,
         "variables": {}
