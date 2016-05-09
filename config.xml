@@ -2,14 +2,14 @@
 <widget id="org.roeper.roeperrecord" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Roeper Record</name>
     <description>
-    This is the official Roeper app. Quicklinks, information, and news in one place!
-  </description>
+        This is the official Roeper app. Quicklinks, information, and news in one place!
+    </description>
     <author email="nicholas.hubbard@roeper.org" href="https://github.com/nhubbard">
-    Nicholas Hubbard
-  </author>
+        Nicholas Hubbard
+    </author>
     <author email="luke.steiger@roeper.org" href="https://github.com/Kabootles">
-    Luke Steiger
-  </author>
+        Luke Steiger
+    </author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://example.com/*" />
