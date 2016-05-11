@@ -5,7 +5,6 @@
   "description": "AngularJS client using Ionic Framework and based on the json-rest-api plugin: https://wordpress.org/plugins/json-rest-api/ with CORS enabled.",
   "main": "index.js",
   "scripts": {
-    "build": "bash ./release.sh",
     "restore": "ionic state restore",
     "installWPHC": "cd scripts && node ./install.js",
     "increaseVersion": "cd scripts && node ./increaseVersion.js",
