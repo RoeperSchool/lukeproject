@@ -1,0 +1,2 @@
+json_key_file "/home/nicholas/.android/60d.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "org.roeper.roeperrecord" # e.g. com.krausefx.app

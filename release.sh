@@ -4,7 +4,7 @@ set -e
 
 ANDROID_ZIPALIGN="/usr/bin/zipalign"
 ANDROID_KEY_PATH="/home/nicholas/.android/main.keystore"
-ANDROID_KEY_ALIAS="main"
+ANDROID_KEY_ALIAS="alias_name"
 
 read -p "Release major, minor or patch? " version
 version=${version:-""}
