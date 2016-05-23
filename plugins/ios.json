@@ -7,13 +7,22 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "com.telerik.plugins.nativepagetransitions": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-inappbrowser": {
+        "cordova-plugin-apprate": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
+        "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "cordova-plugin-file": {
@@ -22,25 +31,28 @@
         "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
         "cordova-plugin-globalization": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-console": {
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-dialogs": {
+        "cordova-plugin-spinner-dialog": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-apprate": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "nl.x-services.plugins.toast": {
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "cordova-plugin-x-socialsharing": {
@@ -49,22 +61,10 @@
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
-        "cordova-plugin-google-analytics": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
-        "com.telerik.plugins.nativepagetransitions": {
+        "nl.x-services.plugins.toast": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
-        "cordova-plugin-crosswalk-webview": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
-        "cordova-plugin-spinner-dialog": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         }
     },

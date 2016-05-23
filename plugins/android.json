@@ -7,6 +7,15 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.telerik.plugins.nativepagetransitions": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
+        "cordova-plugin-apprate": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "org.roeper.roeperrecord"
+        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
@@ -28,16 +37,10 @@
         "cordova-plugin-globalization": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
-        "cordova-plugin-apprate": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "nl.x-services.plugins.toast": {
@@ -53,9 +56,6 @@
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "cordova-plugin-google-analytics": {
-            "PACKAGE_NAME": "org.roeper.roeperrecord"
-        },
-        "com.telerik.plugins.nativepagetransitions": {
             "PACKAGE_NAME": "org.roeper.roeperrecord"
         },
         "phonegap-plugin-push": {
