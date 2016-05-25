@@ -1,71 +1,83 @@
-# Customise this file, documentation can be found here:
-# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
-# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
-# can also be listed using the `fastlane actions` command
-
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
-
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
-
-# This is the minimum version number required.
-# Update this, if you use features of a newer version
 fastlane_version "1.90.0"
-
-default_platform :ios
-
+default_platform :android
 platform :ios do
-  before_all do
-    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/....
+  desc "Verify your XCode installation"
+  lane :verify do
+    verify_xcode
   end
-
-  desc "Runs all the tests"
-  lane :test do
-    scan
+  desc "Restore Ionic configuration"
+  lane :restore do
+    sh "ionic state restore"
   end
-
-  desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    gym # Build your app - more options available
-    pilot
-
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
+  desc "Increase version (major)"
+  lane :bumpmajor do
+    sh "cd scripts && node increaseVersion.js -- -s \"major\""
   end
-
-  desc "Deploy a new version to the App Store"
-  lane :appstore do
-    # match(type: "appstore")
-    # snapshot
-    gym # Build your app - more options available
-    deliver(force: true)
-    # frameit
+  desc "Increase version (minor)"
+  lane :bumpminor do
+    sh "cd scripts && node increaseVersion.js -- -s \"minor\""
   end
-
-  # You can define as many lanes as you want
-
+  desc "Increase version (patch)"
+  lane :bumppatch do
+    sh "cd scripts && node increaseVersion.js -- -s \"patch\""
+  end
+  desc "Dump development files"
+  lane :dumpdev do
+    sh "rm -rf www/* && webpack --progress --colors -d"
+  end
+  desc "Dump production files"
+  lane :dumpprod do
+    sh "rm -rf www/* && webpack --progress --colors -d --config webpack.config.prod.js -p"
+  end
+  desc "Open unminified iOS project"
+  lane :builddev do
+    sh "npm run dumpdev && open platforms/ios/Roeper\ Record.xcodeproj && echo \"Make sure bitcode is disabled, and that your provisioning and code signing is correct!\""
+  end
+  desc "Open production iOS project"
+  lane :buildprod do
+    sh "sudo ./release.ios.sh"
+  end
   after_all do |lane|
-    # This block is called, only if the executed lane was successful
-
-    # slack(
-    #   message: "Successfully deployed new App Update."
-    # )
+    notification(subtitle: "Activity finished!", message: "Check the terminal for status.")
   end
-
   error do |lane, exception|
-    # slack(
-    #   message: exception.message,
-    #   success: false
-    # )
+    notification(subtitle: "An error occurred!", message: "Something probably failed :( check your terminal for information.")
   end
 end
-
-
-# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
-# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
-
-# fastlane reports which actions are used
-# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
+platform :android do
+  desc "Restore Ionic configuration"
+  lane :restore do
+    sh "ionic state restore"
+  end
+  desc "Increase version (major)"
+  lane :bumpmajor do
+    sh "cd scripts && node increaseVersion.js -- -s \"major\""
+  end
+  desc "Increase version (minor)"
+  lane :bumpminor do
+    sh "cd scripts && node increaseVersion.js -- -s \"minor\""
+  end
+  desc "Increase version (patch)"
+  lane :bumppatch do
+    sh "cd scripts && node increaseVersion.js -- -s \"patch\""
+  end
+  desc "Dump development files"
+  lane :dumpdev do
+    sh "rm -rf www/* && webpack --progress --colors -d"
+  end
+  desc "Dump production files"
+  lane :dumpprod do
+    sh "rm -rf www/* && webpack --progress --colors -d --config webpack.config.prod.js -p"
+  end
+  desc "Compile a development release for Android"
+  lane :builddev do
+    sh "BUILD_MULTIPLE_APKS=true cordova build android --device"
+  end
+  desc "Compile a production release for Android"
+  lane :buildprod do
+    sh "sudo ./release.android.sh"
+  end
+  desc "Send most recent build to Google Play (production)"
+  lane :up do
+    sh "supply --apk build/wphc-android-armv7.apk"
+end
