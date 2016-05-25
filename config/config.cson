@@ -1,7 +1,7 @@
 "title": "The Roeper Record"
 
 "api":
-    "baseUrl": "http://roeperrecord.com/dev963/wp-json"
+    "baseUrl": "http://roeperrecord.com/wp-json"
     "timeout": 10000
     "maxAttempt": 3
 
@@ -12,7 +12,7 @@
 "cordova":
     "pushNotifications":
         "enabled": true
-        "baseUrl": "http://roeperrecord.com/dev963/pnfw"
+        "baseUrl": "http://roeperrecord.com/pnfw"
         "android":
             "senderID": "960555374857"
         "ios":
