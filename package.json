@@ -118,6 +118,6 @@
   ],
   "cordovaPlatforms": [
     "android",
-    "ios"
+    "ios@3.9.2"
   ]
 }
